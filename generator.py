@@ -3,7 +3,7 @@ import os
 
 def generate_old_list():
 
-    old = f'D:/{settings.old_dir}/'
+    old = f'{settings.old_dir}/'
     old_sub_folders = os.listdir(old)[::-1]
 
     for folder in old_sub_folders:
@@ -16,7 +16,7 @@ def generate_old_list():
 
 def generate_new_list():
 
-    new = f'D:/{settings.new_dir}/'
+    new = f'{settings.new_dir}/'
     new_sub_folders = os.listdir(new)[::-1]
 
     for folder in new_sub_folders:
